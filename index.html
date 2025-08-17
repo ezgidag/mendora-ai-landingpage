@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendora.AI - Kişisel Duygusal Zindelik Takip Uygulaması</title>
+    <style>
+        /* Temel Stil Ayarları */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #6a1b9a; /* Koyu mor tonu */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.8em;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #e0b0ff; /* Açık mor çizgi */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: #8a2be2; /* Mor tonu */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 25px;
+            font-size: 1.2em;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            background: #7a1fd0; /* Daha koyu mor */
+            transform: translateY(-2px);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .feature-item {
+            background: #f9f0ff; /* Çok açık mor */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item h3 {
+            color: #6a1b9a;
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul li {
+            background: #f0f0f0;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.05em;
+            color: #444;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+        /* Duyarlı Tasarım */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .btn {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mendora.AI: Duygusal Zindeliğiniz İçin Akıllı Asistanınız</h1>
+        <p>Günlük yaşantınızın getirdiği stresi yönetmek, düşünce kalıplarınızı anlamak ve kişisel gelişiminizi desteklemek mi istiyorsunuz? Mendora.AI, yapay zeka destekli kişisel zindelik takip uygulamasıyla size rehberlik etmek için burada.</p>
+        <p>Günlük tutma, yapay zeka analizleri ve pozitif destekle duygusal sağlığınızı güçlendirin.</p>
+
+        <a href="https://mendoraai.streamlit.app/" class="btn">Mendora.AI'yi Deneyin!</a> <!-- BURAYA CANLI UYGULAMA URL'NİZİ EKLEYİN -->
+
+        <h2>Mendora.AI Size Nasıl Yardımcı Olur?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>📝 Günlük Duygu Takibi</h3>
+                <p>Günlük düşüncelerinizi ve hislerinizi kolayca kaydedin. Uygulama, kelime bazlı ve yapay zeka destekli analizlerle size anında geri bildirim sunar.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🧠 Akıllı Duygu Analizi</h3>
+                <p>Google Gemini Flash 2.5 API gücüyle desteklenen yapay zeka sistemimiz, yazdıklarınızı derinlemesine analiz ederek duygusal durumunuzu, yoğunluğunu ve ana temaları belirler. Kişiselleştirilmiş önerilerle size yol gösterir.</p>
+            </div>
+            <div class="feature-item">
+                <h3>✨ Günlük Olumlamalar</h3>
+                <p>Gününüzü pozitif bir notla başlatın veya sonlandırın. Her gün size özel, yeni ve ilham verici olumlamalarla ruh halinizi yükseltin ve zihinsel direncinizi artırın.</p>
+            </div>
+            <div class="feature-item">
+                <h3>📈 İlerleme Takibi ve Analiz</h3>
+                <p>Tarihsel günlük girdilerinizi, yapay zeka analiz sonuçlarınızı ve duygu trendlerinizi anlaşılır grafiklerle görüntüleyin. Duygusal yolculuğunuzdaki ilerlemenizi objektif bir şekilde gözlemleyin.</p>
+            </div>
+        </div>
+
+        <h2>Mendora.AI Kimler İçin İdeal?</h2>
+        <ul>
+            <li>Duygusal farkındalığını ve öz-şefkatini artırmak isteyenler</li>
+            <li>Günlük ruh hali örüntülerini anlamak ve yönetmek isteyenler</li>
+            <li>Farkındalık ve iç gözlem alışkanlıkları geliştirmeyi hedefleyenler</li>
+            <li>Duygusal kalıplarını zaman içinde takip ederek kişisel gelişimini desteklemek isteyen herkes</li>
+        </ul>
+
+        <h2>Gizlilik ve Güvenlik Önceliklidir</h2>
+        <p>Veri güvenliğiniz ve kişisel gizliliğiniz bizim en büyük önceliğimizdir. Hassas analizler mümkün olduğunca yerel olarak işlenir, API'ye minimum veri gönderilir ve tüm kişisel verileriniz şifrelenerek saklanır. Ses verisi asla kaydedilmez veya iletilmez.</p>
+        
+        <p>Hemen şimdi Mendora.AI ile duygusal zindelik yolculuğunuza başlayın ve kendinizi daha iyi tanıyın!</p>
+        <a href="https://mendoraai.streamlit.app/" class="btn">Mendora.AI'yi Başlat</a> <!-- BURAYA CANLI UYGULAMA URL'NİZİ TEKRAR EKLEYİN -->
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Mendora.AI. Tüm hakları saklıdır.</p>
+        <p>Destek ve daha fazla bilgi için GitHub depomuzu ziyaret edin.</p>
+    </div>
+</body>
+</html>
