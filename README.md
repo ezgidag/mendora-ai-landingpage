@@ -147,14 +147,6 @@ Mendora.AI'yi Streamlit Cloud'a dağıtmak için şu adımları izleyin:
             ```
     *   "Deploy!" butonuna tıklayın!
 
-## Katkı
-
-Mendora.AI'ye katkıda bulunmaktan memnuniyet duyarız! Nasıl katkıda bulunacağınızla ilgili yönergeler için lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını (oluşturulacak) inceleyin.
-
-## Lisans
-
-Bu proje [MIT Lisansı](LICENSE) (oluşturulacak) altında lisanslanmıştır.
-
 ## İletişim
 
 Herhangi bir soru veya destek için lütfen GitHub deposunda bir sorun (issue) açın.
