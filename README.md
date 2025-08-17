@@ -41,6 +41,37 @@ Mendora.AI, duygusal zindeliği desteklemek için bir dizi özellik sunar:
 -   **Bulut İşleme**: Karmaşık duygu analizi, Gemini API aracılığıyla kişiselleştirilmiş öneriler.
 -   **Karar Mantığı**: Basit kategorizasyonlar yerel olarak ele alınır; karmaşık analizler API'ye gönderilir.
 
+-   ## 🚀 Gelecek Planları ve Entegrasyonlar
+
+Mendora.AI'yi sürekli geliştirmeyi ve kullanıcılara daha kapsamlı bir zindelik deneyimi sunmayı hedefliyoruz. İşte gelecekteki potansiyel entegrasyonlarımız ve bu geliştirmelerde kullanılabilecek teknolojiler:
+
+### 1. Ortam Sesi Analizi ve Yapay Zeka Geri Bildirimi
+
+*   **Amaç:** Kullanıcının çevresel sesleri analiz ederek ruh hali ve stres seviyesi üzerindeki çevresel faktörlerin etkisini anlamak. Örneğin, gürültülü bir ortamın stresi artırıp artırmadığını tespit etmek veya doğa seslerinin rahatlatıcı etkisini belgelemek.
+*   **Teknolojiler:**
+    *   **Ses İşleme Kütüphaneleri:** `librosa` ve `pydub` (ses verisi işleme, özellik çıkarma ve analiz için).
+    *   **Gerçek Zamanlı Ses Yakalama:** `streamlit_webrtc` (web tabanlı ses girişi ve işleme için).
+    *   **Yapay Zeka Modelleri:** Çevresel ses sınıflandırması (örneğin, gürültü seviyesi, insan konuşması, doğa sesleri gibi belirli ses ortamlarını tanıma), sesin duygusal tonunu ve stres göstergelerini analiz etmek için özel eğitilmiş veya genel ses analizi API'leri (örn. Google Cloud Speech-to-Text, Google Cloud Natural Language API'nin sesle ilgili uzantıları veya özel makine öğrenimi modelleri).
+
+### 2. BDT (Bilişsel Davranışçı Terapi) ve Günlük Testler
+
+*   **Amaç:** Kullanıcılara BDT prensiplerine dayalı yönlendirilmiş testler, egzersizler ve değerlendirmeler sunarak olumsuz düşünce kalıplarını tanımalarına ve daha sağlıklı düşünce biçimleri geliştirmelerine yardımcı olmak. Düzenli testlerle ilerlemeyi izlemek.
+*   **Teknolojiler:**
+    *   **Veritabanı Yapısı:** Test sorularını, kullanıcı yanıtlarını, skorları ve zaman içindeki ilerlemeyi depolamak için mevcut SQLite yapısının genişletilmesi (veya Firebase gibi üretim veritabanlarıyla entegrasyon).
+    *   **Kullanıcı Arayüzü:** Streamlit'in form bileşenleri, etkileşimli öğeler ve görselleştirme yetenekleri kullanılarak sezgisel test arayüzlerinin oluşturulması.
+    *   **Yapay Zeka Destekli Analiz ve Kişiselleştirme:** Kullanıcının test yanıtlarını değerlendirmek, bilişsel çarpıtmaları tespit etmek ve kişiselleştirilmiş BDT alıştırmaları, okuma materyalleri veya geri bildirimler sunmak için Gemini API veya ince ayarlanmış (fine-tuned) modellerin kullanılması.
+    *   **Mantık Geliştirme:** Test puanlama algoritmaları, sonuç yorumlama motoru ve kullanıcının yanıtlarına göre sonraki adımları önerme için Python tabanlı iş mantığı.
+
+### 3. Belge İşleme ve Bilgi Çağırma Sistemi
+
+*   **Amaç:** Kullanıcıların PDF gibi belgeleri yüklemesine olanak tanıyarak bu belgelerden bilgi çekme ve bu bilgiler üzerinden sorulara yanıt verme veya önerilerde bulunma yeteneği. Örneğin, kişisel gelişim kitaplarından anahtar çıkarımlar yapmak veya akademik makalelerden özetler sunmak.
+*   **Teknolojiler:**
+    *   **Belge Yükleme ve Çıkarma:** `pypdf` veya benzeri kütüphaneler (PDF içeriğini metne dönüştürmek için).
+    *   **Metin Parçalama (Chunking):** `langchain` (uzun belgeleri yönetilebilir parçalara bölmek için).
+    *   **Vektör Veritabanı (Vector Database):** `Chroma` veya `FAISS` gibi vektör veritabanları (metin parçalarının gömülü temsillerini depolamak ve hızlı benzerlik aramaları yapmak için).
+    *   **Gömme Modelleri (Embedding Models):** `sentence-transformers` veya Google'ın kendi gömme modelleri (metin parçalarını sayısal vektörlere dönüştürmek için).
+    *   **Bilgi Çağırma ve Yanıtlama:** Kullanıcının sorgusuna göre vektör veritabanında en alakalı parçaları bulmak ve bu parçaları kullanarak Gemini API aracılığıyla kapsamlı ve bağlamsal yanıtlar oluşturmak (Retrieval-Augmented Generation - RAG yaklaşımı).
+
 ## Yerel Kurulum ve Çalıştırma
 
 Mendora.AI'yi yerel makinenizde çalıştırmak için şu adımları izleyin:
